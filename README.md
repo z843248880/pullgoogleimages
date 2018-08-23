@@ -8,13 +8,15 @@ This project is used to pull google official docker images.It is can pull the ne
 - getnewtag.go：    从众多镜像tag中选取可能性最大的最新tag
 - init.go：         初始化操作；initMap()方法可以控制想同步的项目和镜像
 - main.go：         程序入口
-- var.go：          相关全局变量
+- var.go：          相关全局变量；修改镜像源或者目标镜像地址，修改该文件的ImageURL和PullURL即可；请把PullURL修改为你的私有docker仓库地址
 
 # 前提
-安装go环境  
+1. 安装go环境  
 请自行搜索安装go，版本不限；建议：go version go1.10.3 linux/amd64  
 将go运行程序移动到/usr/bin/目录下  
-执行go version验证go命令是否可用。  
+执行go version验证go命令是否可用。 
+2. 在服务器上登录私有docker仓库，并在私有docker仓库上创建项目:kubernetes-helm、google-samples、google-containers，想同步哪些镜像项目就在私有docker仓库创建哪些项目
+
 
 # 运行
 mkdir -p /data/gopro/src &&  \
