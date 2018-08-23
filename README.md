@@ -1,5 +1,14 @@
 # pullgoogleimages
 This project is used to pull google official docker images.It is can pull the newest tag from all tags.  
+该项目用于一键拉取google相关docker镜像并推送到私有docker仓库  
+
+# 代码文件说明
+- common.go：       存放执行linux命令的相关代码
+- getimageinfo.go： 存放处理镜像的相关代码
+- getnewtag.go：    从众多镜像tag中选取可能性最大的最新tag
+- init.go：         初始化操作；initMap()方法可以控制想同步的项目和镜像
+- main.go：         程序入口
+- var.go：          相关全局变量
 
 # 前提
 安装go环境  
