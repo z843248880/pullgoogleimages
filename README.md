@@ -3,7 +3,7 @@ This project is used to pull google official docker images.It is can pull the ne
 
 # 前提
 1. 获取google官方镜像版本信息
-mkdir -p /data/git_root && cd /data/git_root && git clone https://github.com/anjia0532/gcr.io_mirror.git
+git clone https://github.com/anjia0532/gcr.io_mirror.git /data/git_root/gcr.io_mirror
 2. 安装go环境
 请自行搜索安装go，版本不限；建议：go version go1.10.3 linux/amd64
 将go运行程序移动到/usr/bin/目录下
