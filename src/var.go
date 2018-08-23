@@ -10,7 +10,7 @@ var (
 	ImageURL                  			= "anjia0532"
 
 	//推送镜像地址，即目标地址；记住必须在服务器上先docker login登录到docker仓库，否则推送会报错。
-	PullURL 							= "wcr.wecash.net"
+	PullURL 							= "des.registry.com"
 
 	//服务器上存放镜像的目录
 	RootDir                   			= "/data/git_root/gcr.io_mirror"
